@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63F20D6E299E883900D294E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F20D6D299E883900D294E2 /* Foundation.framework */; };
+		63F20D70299E8DEE00D294E2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F20D6F299E8DEE00D294E2 /* libsqlite3.tbd */; };
 		E66864882227D57800B06DE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E66864822227D57800B06DE2 /* logo.png */; };
 		E6A1155F2244771100851D3C /* watf_bankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1155E2244771100851D3C /* watf_bankTests.swift */; };
 		E6AE1FCF221D094400C48740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE1FCE221D094400C48740 /* AppDelegate.swift */; };
@@ -25,7 +27,6 @@
 		E6AE1FF3221D444800C48740 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE1FF2221D444800C48740 /* Summary.swift */; };
 		E6AE200D221D452800C48740 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE200C221D452800C48740 /* Security.framework */; };
 		E6AE2010221D460300C48740 /* SQLCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE200F221D460300C48740 /* SQLCipher.swift */; };
-		E6AE204E221D488D00C48740 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE2037221D479500C48740 /* libsqlcipher.a */; };
 		E6AE20552223DAE700C48740 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE20542223DAE700C48740 /* Favourite.swift */; };
 		E6AE205D2223E42300C48740 /* TransferResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE205C2223E42200C48740 /* TransferResult.swift */; };
 		E6AE205F2223E75600C48740 /* AddFavourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE205E2223E75600C48740 /* AddFavourite.swift */; };
@@ -42,51 +43,13 @@
 			remoteGlobalIDString = E6AE1FCA221D094400C48740;
 			remoteInfo = "watf-bank";
 		};
-		E6AE202E221D479500C48740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041981BFC382400ED2AD5;
-			remoteInfo = "SQLCipher iOS";
-		};
-		E6AE2030221D479500C48740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041B11BFC3B2200ED2AD5;
-			remoteInfo = "SQLCipher OSX";
-		};
-		E6AE2032221D479500C48740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041C31BFC3CC000ED2AD5;
-			remoteInfo = "SQLCipher tvOS";
-		};
-		E6AE2034221D479500C48740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C0041D61BFC3E2500ED2AD5;
-			remoteInfo = "SQLCipher watchOS";
-		};
-		E6AE2036221D479500C48740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D;
-			remoteInfo = sqlcipher;
-		};
-		E6AE204C221D488700C48740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
-			remoteInfo = sqlcipher;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63F20D6A299E867200D294E2 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		63F20D6B299E867200D294E2 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		63F20D6D299E883900D294E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63F20D6F299E8DEE00D294E2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E66864822227D57800B06DE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		E6A1155C2244771100851D3C /* watf-bankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watf-bankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A1155E2244771100851D3C /* watf_bankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watf_bankTests.swift; sourceTree = "<group>"; };
@@ -110,7 +73,6 @@
 		E6AE200C221D452800C48740 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E6AE200E221D45E100C48740 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		E6AE200F221D460300C48740 /* SQLCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLCipher.swift; sourceTree = "<group>"; };
-		E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		E6AE20542223DAE700C48740 /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		E6AE205C2223E42200C48740 /* TransferResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResult.swift; sourceTree = "<group>"; };
 		E6AE205E2223E75600C48740 /* AddFavourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavourite.swift; sourceTree = "<group>"; };
@@ -131,7 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6AE204E221D488D00C48740 /* libsqlcipher.a in Frameworks */,
+				63F20D70299E8DEE00D294E2 /* libsqlite3.tbd in Frameworks */,
+				63F20D6E299E883900D294E2 /* Foundation.framework in Frameworks */,
 				E6AE200D221D452800C48740 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,8 +114,9 @@
 		E6AE1FC2221D094400C48740 = {
 			isa = PBXGroup;
 			children = (
+				63F20D6A299E867200D294E2 /* sqlite3.c */,
+				63F20D6B299E867200D294E2 /* sqlite3.h */,
 				E6AE200E221D45E100C48740 /* Header.h */,
-				E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */,
 				E6AE1FCD221D094400C48740 /* watf-bank */,
 				E6A1155D2244771100851D3C /* watf-bankTests */,
 				E6AE1FCC221D094400C48740 /* Products */,
@@ -210,21 +174,11 @@
 		E6AE200A221D452200C48740 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63F20D6F299E8DEE00D294E2 /* libsqlite3.tbd */,
+				63F20D6D299E883900D294E2 /* Foundation.framework */,
 				E6AE200C221D452800C48740 /* Security.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E6AE2026221D479500C48740 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE202F221D479500C48740 /* SQLCipher.framework */,
-				E6AE2031221D479500C48740 /* SQLCipher.framework */,
-				E6AE2033221D479500C48740 /* SQLCipher.framework */,
-				E6AE2035221D479500C48740 /* SQLCipher.framework */,
-				E6AE2037221D479500C48740 /* libsqlcipher.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +213,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E6AE204D221D488700C48740 /* PBXTargetDependency */,
 			);
 			name = "watf-bank";
 			productName = "watf-bank";
@@ -273,15 +226,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "WaTF-Team";
 				TargetAttributes = {
 					E6A1155B2244771100851D3C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = "";
 						TestTargetID = E6AE1FCA221D094400C48740;
 					};
 					E6AE1FCA221D094400C48740 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -296,12 +251,6 @@
 			mainGroup = E6AE1FC2221D094400C48740;
 			productRefGroup = E6AE1FCC221D094400C48740 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E6AE2026221D479500C48740 /* Products */;
-					ProjectRef = E6AE2025221D479500C48740 /* sqlcipher.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E6AE1FCA221D094400C48740 /* watf-bank */,
@@ -309,44 +258,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E6AE202F221D479500C48740 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = E6AE202E221D479500C48740 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6AE2031221D479500C48740 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = E6AE2030221D479500C48740 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6AE2033221D479500C48740 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = E6AE2032221D479500C48740 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6AE2035221D479500C48740 /* SQLCipher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLCipher.framework;
-			remoteRef = E6AE2034221D479500C48740 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6AE2037221D479500C48740 /* libsqlcipher.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsqlcipher.a;
-			remoteRef = E6AE2036221D479500C48740 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E6A1155A2244771100851D3C /* Resources */ = {
@@ -410,11 +321,6 @@
 			isa = PBXTargetDependency;
 			target = E6AE1FCA221D094400C48740 /* watf-bank */;
 			targetProxy = E6A115612244771100851D3C /* PBXContainerItemProxy */;
-		};
-		E6AE204D221D488700C48740 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = sqlcipher;
-			targetProxy = E6AE204C221D488700C48740 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,6 +410,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -565,6 +472,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -599,20 +507,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V9PSZD7R6;
+				DEVELOPMENT_TEAM = 456WY969BF;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SQLITE_HAS_CODEC=1",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/sqlcipher";
 				INFOPLIST_FILE = "watf-bank/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
-				OTHER_LDFLAGS = "$(BUILT_PRODUCTS_DIR)/libsqlcipher.a";
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DSQLITE_TEMP_STORE=3",
+					"-DSQLCIPHER_CRYPTO_CC",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "WaTF-Team.watf-bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
@@ -626,17 +539,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V9PSZD7R6;
+				DEVELOPMENT_TEAM = 456WY969BF;
 				GCC_PREPROCESSOR_DEFINITIONS = "SQLITE_HAS_CODEC=1";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/sqlcipher";
 				INFOPLIST_FILE = "watf-bank/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
-				OTHER_LDFLAGS = "$(BUILT_PRODUCTS_DIR)/libsqlcipher.a";
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DSQLITE_TEMP_STORE=3",
+					"-DSQLCIPHER_CRYPTO_CC",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "WaTF-Team.watf-bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Header.h;

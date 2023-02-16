@@ -3,7 +3,7 @@ import UIKit
 
 class Http: NSObject, URLSessionDelegate {
     
-    private static var ip = "127.0.0.1:5000"
+    private static var ip = "ec2-52-14-146-103.us-east-2.compute.amazonaws.com"
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Swift.Void) {
         completionHandler(URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
@@ -21,6 +21,7 @@ class Http: NSObject, URLSessionDelegate {
                 completionHandler(["error":"Connection Failed"])
                 return
             }
+            print(String(decoding: data, as: UTF8.self))
             let r = response as! HTTPURLResponse
             if r.statusCode != 200 {
                 completionHandler(["error":"\(r.statusCode):\(HTTPURLResponse.localizedString(forStatusCode: r.statusCode))"])
