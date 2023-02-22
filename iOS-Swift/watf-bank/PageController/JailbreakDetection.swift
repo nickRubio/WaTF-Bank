@@ -19,7 +19,8 @@ class JailbreakDetection : UIViewController {
     }
     
     func isJail() -> Bool {
-        return checkFile() || checkRead() || checkWrite()
+        //return checkFile() || checkRead() || checkWrite()
+        return false
     }
     
     func checkFile() -> Bool {
