@@ -36,7 +36,7 @@ class Transfer : UIViewController, UITextFieldDelegate {
                 t.labelV = "Transfer Succeeded"
                 t.fromAccountV = "From : "+res["username"]!
                 t.toAccountV = "To : "+res["toAccount"]!
-                t.amountV = "Amount : "+res["amount"]!
+                t.amountV = "Amount : $"+res["amount"]!
                 self.present(t, animated: true, completion: nil)
             }
             else if let m = res["message"] {

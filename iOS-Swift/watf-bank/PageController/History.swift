@@ -63,6 +63,7 @@ class History : UIViewController, UITableViewDelegate, UITableViewDataSource {
         c.toAccount.text = "To : "+toAccountData[indexPath.section]
         c.amount.text = "Amount : "+amountData[indexPath.section]
         c.date.text = "Date : "+dateData[indexPath.section]
+        
         return c
     }
 }

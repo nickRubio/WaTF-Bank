@@ -18,5 +18,10 @@ class TransferResult : UIViewController {
         fromAccount.text = fromAccountV
         toAccount.text = toAccountV
         amount.text = amountV
+        
+        label.textColor = UIColor.black
+        fromAccount.textColor = UIColor.black
+        toAccount.textColor = UIColor.black
+        amount.textColor = UIColor.black
     }
 }

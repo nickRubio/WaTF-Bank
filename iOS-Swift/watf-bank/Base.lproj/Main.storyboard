@@ -343,14 +343,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-zr-voc">
-                                <rect key="frame" x="16" y="96" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account No :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulc-zg-szn">
+                                <rect key="frame" x="16" y="320" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account No :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulc-zg-szn">
-                                <rect key="frame" x="16" y="320" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-zr-voc">
+                                <rect key="frame" x="16" y="96" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -379,10 +379,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="accountNo" destination="ulc-zg-szn" id="m1d-PC-sbr"/>
-                        <outlet property="balance" destination="Zu2-BN-Qlg" id="XOr-pc-B1w"/>
-                        <outlet property="tel" destination="gdk-TI-3lG" id="M9u-2F-frw"/>
-                        <outlet property="username" destination="2ke-2X-I1a" id="Wlo-d5-FBw"/>
+                        <outlet property="accountNo" destination="ulc-zg-szn" id="Otd-L1-n5k"/>
+                        <outlet property="balance" destination="Zu2-BN-Qlg" id="ZOg-Ai-ih0"/>
+                        <outlet property="tel" destination="gdk-TI-3lG" id="CFw-uC-QTY"/>
+                        <outlet property="username" destination="2ke-2X-I1a" id="V8Y-69-TUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkt-OW-ofg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -779,10 +779,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Edj-cq-w0S"/>
         <segue reference="Jvs-xE-XjV"/>
         <segue reference="Afi-ov-UZg"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="logo.png" width="450" height="450"/>
+        <image name="logo.png" width="1024" height="1024"/>
     </resources>
 </document>

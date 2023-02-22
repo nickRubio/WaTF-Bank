@@ -50,6 +50,8 @@
 		63F20D6B299E867200D294E2 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		63F20D6D299E883900D294E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63F20D6F299E8DEE00D294E2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		63F20D7129A690F500D294E2 /* watf-bank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watf-bank.entitlements"; sourceTree = "<group>"; };
+		63F20D7229A6BDFD00D294E2 /* logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo1.jpg; path = "watf-bank/logo1.jpg"; sourceTree = "<group>"; };
 		E66864822227D57800B06DE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		E6A1155C2244771100851D3C /* watf-bankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watf-bankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A1155E2244771100851D3C /* watf_bankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watf_bankTests.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		E6AE1FC2221D094400C48740 = {
 			isa = PBXGroup;
 			children = (
+				63F20D7229A6BDFD00D294E2 /* logo1.jpg */,
 				63F20D6A299E867200D294E2 /* sqlite3.c */,
 				63F20D6B299E867200D294E2 /* sqlite3.h */,
 				E6AE200E221D45E100C48740 /* Header.h */,
@@ -136,6 +139,7 @@
 		E6AE1FCD221D094400C48740 /* watf-bank */ = {
 			isa = PBXGroup;
 			children = (
+				63F20D7129A690F500D294E2 /* watf-bank.entitlements */,
 				E66864822227D57800B06DE2 /* logo.png */,
 				E6AE1FE0221D0A7000C48740 /* PageController */,
 				E6AE1FCE221D094400C48740 /* AppDelegate.swift */,
@@ -506,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "watf-bank/watf-bank.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 456WY969BF;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -514,7 +519,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/sqlcipher";
 				INFOPLIST_FILE = "watf-bank/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,10 +531,10 @@
 					"-DNDEBUG",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "WaTF-Team.watf-bank";
+				PRODUCT_BUNDLE_IDENTIFIER = "WaTF-Team.watf-bank-training";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -538,12 +543,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "watf-bank/watf-bank.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 456WY969BF;
 				GCC_PREPROCESSOR_DEFINITIONS = "SQLITE_HAS_CODEC=1";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/sqlcipher";
 				INFOPLIST_FILE = "watf-bank/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,10 +561,10 @@
 					"-DNDEBUG",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "WaTF-Team.watf-bank";
+				PRODUCT_BUNDLE_IDENTIFIER = "WaTF-Team.watf-bank-training";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

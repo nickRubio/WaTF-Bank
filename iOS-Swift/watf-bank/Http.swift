@@ -21,19 +21,20 @@ class Http: NSObject, URLSessionDelegate {
                 completionHandler(["error":"Connection Failed"])
                 return
             }
-            print(String(decoding: data, as: UTF8.self))
+            //print(String(decoding: data, as: UTF8.self))
             let r = response as! HTTPURLResponse
             if r.statusCode != 200 {
                 completionHandler(["error":"\(r.statusCode):\(HTTPURLResponse.localizedString(forStatusCode: r.statusCode))"])
                 return
             }
-            let tmp = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: String]
+            let tmp = try? JSONSerialization.jsonObject(with: data, options: [.mutableContainers]) as? [String: Any]
+            //print(tmp)
             if tmp! == nil {
-                let res = try? JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                let res = try? JSONSerialization.jsonObject(with: data, options: [.mutableContainers]) as! [String: Any]
                 completionHandler(res!)
             }
             else {
-                let res = try? JSONSerialization.jsonObject(with: data, options: []) as! [String: String]
+                let res = try? JSONSerialization.jsonObject(with: data, options: [.mutableContainers]) as! [String: Any]
                 completionHandler(res!)
             }
         }
