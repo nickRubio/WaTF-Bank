@@ -17,8 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,9 +30,8 @@ import okhttp3.OkHttpClient;
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private static final int MY_PERMISSIONS_REQUEST = 0;
-    EditText etUsername, etPassword, etIp1, etIp2, etIp3, etIp4, etPort;
+    EditText etUsername, etPassword, etHost;
     Button btnLogin, btnAboutme;
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +45,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         } else {
             etUsername = findViewById(R.id.etUsername);
             etPassword = findViewById(R.id.etPassword);
-            etIp1 = findViewById(R.id.etIp1);
-            etIp2 = findViewById(R.id.etIp2);
-            etIp3 = findViewById(R.id.etIp3);
-            etIp4 = findViewById(R.id.etIp4);
-            etPort = findViewById(R.id.etPort);
+            etHost = findViewById(R.id.etHost);
+
             btnLogin = findViewById(R.id.btnLogin);
             btnLogin.setOnClickListener(this);
             String ip = getFromSharePref("ip");
@@ -60,17 +54,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             String pin = getFromSharePref("pin");
             if (token != null && pin != null)
                 startActivity(new Intent(this, CheckPin.class));
-            if (ip != null) {
-                String[] ipSplit = ip.split(Pattern.quote("."));
-                etIp1.setText(ipSplit[0].split("/")[2]);
-                etIp2.setText(ipSplit[1]);
-                etIp3.setText(ipSplit[2]);
-                etIp4.setText(ipSplit[3].split(":")[0]);
-                etPort.setText(ipSplit[3].split(":")[1]);
-            }
-            mAdView = findViewById(R.id.adView);
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
+
+
             btnAboutme = findViewById(R.id.btnAboutme);
             btnAboutme.setOnClickListener(this);
         }
@@ -79,19 +64,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v == btnLogin) {
-            String username = etUsername.getText().to
-            String();
+            String username = etUsername.getText().toString();
             String password = etPassword.getText().toString();
-            //TODO: need to fix this. Currently only accepting ips????
-            if (false)//etIp1.getText().toString().isEmpty() || etIp2.getText().toString().isEmpty() || etIp3.getText().toString().isEmpty() || etIp4.getText().toString().isEmpty() || etPort.getText().toString().isEmpty())
-                Toast.makeText(this, "Please set IP", Toast.LENGTH_SHORT).show();
-            else {
-                // HARD CODING Endpoint
-                String ip = "https://www.mapentest.netspidns.com";
-                saveToSharePref("ip", ip);
-                AsyncTaskBackGround asyncTaskBackGround = new AsyncTaskBackGround();
-                asyncTaskBackGround.execute(username, password, ip);
-            }
+            String host = etHost.getText().toString();
+
+            saveToSharePref("ip", host);
+
+            AsyncTaskBackGround asyncTaskBackGround = new AsyncTaskBackGround();
+            asyncTaskBackGround.execute(username, password, host);
+
         } else
             ShowPopup();
     }

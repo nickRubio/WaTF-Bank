@@ -27,6 +27,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     api 'com.squareup.okhttp3:okhttp:3.7.0'
-    api 'com.google.android.gms:play-services-ads:11.8.0'
+    //api 'com.google.android.gms:play-services-ads:11.8.0'
     api 'net.zetetic:android-database-sqlcipher:3.5.7@aar'
 }
