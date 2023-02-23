@@ -3,7 +3,7 @@ import UIKit
 
 class Http: NSObject, URLSessionDelegate {
     
-    private static var ip = "ec2-52-14-146-103.us-east-2.compute.amazonaws.com"
+    private static var ip = "www.mapentest.netspidns.com"
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Swift.Void) {
         completionHandler(URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
