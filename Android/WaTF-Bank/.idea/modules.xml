@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WaTF-Bank.iml" filepath="$PROJECT_DIR$/WaTF-Bank.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WaTF-Bank.iml" filepath="$PROJECT_DIR$/.idea/WaTF-Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WaTF-Bank.app.unitTest.iml" />
     </modules>
   </component>
 </project>

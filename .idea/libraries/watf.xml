@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="watf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Android/WaTF-Bank/app/src/main/assets/watf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

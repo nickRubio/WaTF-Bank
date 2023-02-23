@@ -6,15 +6,20 @@ class Summary : UIViewController {
     @IBOutlet weak var tel : UILabel!
     @IBOutlet weak var balance : UILabel!
     @IBOutlet weak var accountNo : UILabel!
+    @IBOutlet weak var accLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        //print(self.accountLabel.text!)
-        guard let token = KeyChain.load("token"), let acc = KeyChain.load("accountNo") else {
-            Util.alert(self, "Invalid Token")
-            return
-        }
+        self.accLabel.text = "Account Summary"
+        self.accLabel.textColor = UIColor.black
+
+        guard let token = KeyChain.load("token"),
+              let acc = KeyChain.load("accountNo") else {
+                    Util.alert(self, "Invalid Token")
+                    return
+            }
+        
         let input = ["accountNo":acc,"token":token]
         Http().post(input, "accountSummary", completionHandler: {(re: [String:Any]) in
             var res = re as! [String:String]

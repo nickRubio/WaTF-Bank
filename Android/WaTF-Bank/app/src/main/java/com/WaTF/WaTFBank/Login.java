@@ -81,10 +81,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if (v == btnLogin) {
             String username = etUsername.getText().toString();
             String password = etPassword.getText().toString();
-            if (etIp1.getText().toString().isEmpty() || etIp2.getText().toString().isEmpty() || etIp3.getText().toString().isEmpty() || etIp4.getText().toString().isEmpty() || etPort.getText().toString().isEmpty())
+            //TODO: need to fix this. Currently only accepting ips????
+            if (false)//etIp1.getText().toString().isEmpty() || etIp2.getText().toString().isEmpty() || etIp3.getText().toString().isEmpty() || etIp4.getText().toString().isEmpty() || etPort.getText().toString().isEmpty())
                 Toast.makeText(this, "Please set IP", Toast.LENGTH_SHORT).show();
             else {
-                String ip = "https://" + etIp1.getText().toString() + "." + etIp2.getText().toString() + "." + etIp3.getText().toString() + "." + etIp4.getText().toString() + ":" + etPort.getText().toString();
+                // HARD CODING Endpoint
+                String ip = "https://www.mapentest.netspi.com";
                 saveToSharePref("ip", ip);
                 AsyncTaskBackGround asyncTaskBackGround = new AsyncTaskBackGround();
                 asyncTaskBackGround.execute(username, password, ip);
@@ -104,7 +106,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 break;
             }
         }
-        return root;
+        return false;
     }
 
     private String getFromSharePref(String name) {

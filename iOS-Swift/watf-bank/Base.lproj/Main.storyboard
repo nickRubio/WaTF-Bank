@@ -379,6 +379,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="accLabel" destination="h7a-zr-voc" id="L2O-4t-mMx"/>
                         <outlet property="accountNo" destination="ulc-zg-szn" id="Otd-L1-n5k"/>
                         <outlet property="balance" destination="Zu2-BN-Qlg" id="ZOg-Ai-ih0"/>
                         <outlet property="tel" destination="gdk-TI-3lG" id="CFw-uC-QTY"/>
@@ -779,7 +780,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Edj-cq-w0S"/>
         <segue reference="Jvs-xE-XjV"/>
         <segue reference="Afi-ov-UZg"/>
     </inferredMetricsTieBreakers>
