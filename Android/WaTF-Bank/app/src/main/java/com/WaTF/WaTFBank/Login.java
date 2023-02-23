@@ -79,14 +79,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v == btnLogin) {
-            String username = etUsername.getText().toString();
+            String username = etUsername.getText().to
+            String();
             String password = etPassword.getText().toString();
             //TODO: need to fix this. Currently only accepting ips????
             if (false)//etIp1.getText().toString().isEmpty() || etIp2.getText().toString().isEmpty() || etIp3.getText().toString().isEmpty() || etIp4.getText().toString().isEmpty() || etPort.getText().toString().isEmpty())
                 Toast.makeText(this, "Please set IP", Toast.LENGTH_SHORT).show();
             else {
                 // HARD CODING Endpoint
-                String ip = "https://www.mapentest.netspi.com";
+                String ip = "https://www.mapentest.netspidns.com";
                 saveToSharePref("ip", ip);
                 AsyncTaskBackGround asyncTaskBackGround = new AsyncTaskBackGround();
                 asyncTaskBackGround.execute(username, password, ip);
