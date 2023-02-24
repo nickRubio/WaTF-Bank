@@ -56,7 +56,7 @@ public class SetPin extends AppCompatActivity implements View.OnClickListener {
 
         if (mFingerprintManager == null) {
             Toast.makeText(this, "Please set pin", Toast.LENGTH_SHORT).show();
-            return;git
+            return;
         }
 
         if (mFingerprintManager.isHardwareDetected()) {
