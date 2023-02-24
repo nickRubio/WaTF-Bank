@@ -17,10 +17,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="242dp"
+                android:layout_height="230dp"
                 android:layout_gravity="center_horizontal"
-                android:background="@mipmap/logo" />
+                android:background="@mipmap/scanny" />
 
             <android.support.v4.widget.Space
                 android:layout_width="match_parent"
@@ -71,14 +71,6 @@
                 android:inputType="textPersonName"
                 android:text="https://www.mapentest.netspidns.com" />
 
-            <Button
-                android:id="@+id/btnAboutme"
-                style="@android:style/Widget.Holo.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/button"
-                android:layout_gravity="center"
-                android:text="Development Team"
-                android:textColor="@android:color/holo_blue_dark" />
         </LinearLayout>
     </ScrollView>
 

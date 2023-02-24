@@ -31,7 +31,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private static final int MY_PERMISSIONS_REQUEST = 0;
     EditText etUsername, etPassword, etHost;
-    Button btnLogin, btnAboutme;
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +56,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(this, CheckPin.class));
 
 
-            btnAboutme = findViewById(R.id.btnAboutme);
-            btnAboutme.setOnClickListener(this);
         }
     }
 
